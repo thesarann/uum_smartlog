@@ -75,18 +75,6 @@ The APK will be at `build/app/outputs/flutter-apk/app-release.apk`.
 7. **Refresh** — Re-queries SQLite for the current page.
 8. **Pagination** — Bottom controls show current page and total pages with Previous/Next. Disabled at boundaries. After deletion, the app clamps to the nearest valid page.
 
-## Project Structure
-lib/
-├── main.dart # App entry point
-├── models/
-│ └── study_session.dart # StudySession model (toMap/fromMap)
-├── database/
-│ └── database_helper.dart # SQLite helper (CRUD + pagination)
-└── screens/
-├── splash_screen.dart # 3-second splash
-├── home_screen.dart # List, pagination, details, delete
-└── add_edit_screen.dart # Add/Edit form with validation
-
 ## Key Technical Details
 
 - **State management:** `setState` only (as required).
